@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Calling - Jarvis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-family: -apple-system, sans-serif; margin: 0; height: 100vh; overflow: hidden; }
+        .calling-screen { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; backdrop-filter: blur(20px); }
+        .profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 5px solid rgba(255,255,255,0.3); margin-bottom: 20px; background: linear-gradient(45deg, #ff6b6b, #4ecdc4); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+        .calling-name { font-size: 2.5rem; font-weight: bold; margin-bottom: 40px; }
+        .call-controls { display: flex; gap: 30px; }
+        .call-btn { width: 80px; height: 80px; border-radius: 50%; border: none; font-size: 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+        .accept-call { background: #4CAF50; color: white; }
+        .decline-call { background: #f44336; color: white; }
+    </style>
+</head>
+<body>
+    <div class="calling-screen">
+        <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+        <div class="calling-name">Lucky</div>
+        <div class="text-xl mb-8 animate-pulse">Instagram Video Call...</div>
+        <div class="call-controls">
+            <button class="call-btn decline-call"><i class="fa-solid fa-phone-slash"></i></button>
+            <button class="call-btn accept-call"><i class="fa-solid fa-phone"></i></button>
+        </div>
+    </div>
+</body>
+</html>
